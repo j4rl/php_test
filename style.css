@@ -16,16 +16,52 @@
     body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
+        display:flex;
+        flex-direction:column;
     }
 }
 @layer default {
     .container {
+        flex-grow: 5;
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
     }
     p{
         margin-bottom: 15px;
+    }
+    nav{
+        margin-bottom: 20px;
+        background: rgb(224, 224, 224);
+        padding: 1rem;
+        a{
+            margin-right: 15px;
+            font-weight: bold;
+        }
+    }
+    header{
+        background: linear-gradient(to right, #007bff, grey);
+        padding: 20px;
+        color: white;
+        h1{
+            margin-bottom: 10px;
+        }
+    }
+    a{
+        color: #007bff;
+        text-decoration: none;
+        padding: 2px 5px;
+        &:hover{
+            background: #007bff;
+            color: white;
+        }
+    }
+    footer{
+        margin-top: 40px;
+        padding: 20px;
+        text-align: center;
+        background-color: #333;
+        color: white;
     }
     form{
         margin-bottom: 30px;

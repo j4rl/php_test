@@ -30,11 +30,13 @@ if(isset($_POST['btn'])){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<?php require_once("assets/_header.php"); ?>
+<?php require_once("assets/_nav.php"); ?>
     <form action="login.php" method="post">
         <input type="text" name="user" id="user" placeholder="Användarnamn" required>
         <input type="password" name="pass" id="pass" placeholder="Lösenord" required>
         <input type="submit" value="Logga in" name="btn">
 </form>
+<?php require_once("assets/_footer.php"); ?>
 </body>
 </html>
